@@ -10,5 +10,4 @@ while True:
   if numero!=numero_random:
     print("Te Salvaste brother")
     print(f"El numero era {numero_random}")
-    print("Felicidades, Eres Hombre")
-    print("Hola Choromboo")
+    print("Felicidades, No eres Gay")
