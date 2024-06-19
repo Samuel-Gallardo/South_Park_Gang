@@ -54,9 +54,12 @@ def Registrar_Trabajador():
     Sueldo.append(sueldo)
     Salud.append(sueldo*0.07)
     afp.append(sueldo*0.12)
+    
 def Ver_Lista_Trabajadores():
     for i in range(len(trabajadores)):
         print(f"{i+1}.-{trabajadores[i]}")
+
+
 def Imprimir_Lista_Sueldos():
     with open('registrosTrabajadores.txt','w') as registros:
         print("="*15,"LISTA DE SUELDO","="*15)
