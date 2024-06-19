@@ -5,10 +5,9 @@ while True:
   numero=int(input())
   if numero==numero_random:
     print("JAJAJA, Escogiste el numero random, que gay")
-  else:
+  if numero>=11:
+    print("Opcion No Valida")
+  if numero!=numero_random:
     print("Te Salvaste brother")
     print(f"El numero era {numero_random}")
     
-
-
-
