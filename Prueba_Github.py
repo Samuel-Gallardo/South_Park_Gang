@@ -13,4 +13,4 @@ while True:
     print("Felicidades, No eres Gay")
     print("Hola Chorombo")
 
-
+https://lostgamer.io/multiplayer/GAfGmFNFg0muQt1kni7ev
