@@ -11,5 +11,3 @@ while True:
     print("Te Salvaste brother")
     print(f"El numero era {numero_random}")
     print("Felicidades, No eres Gay")
-
-while True 
