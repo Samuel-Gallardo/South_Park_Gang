@@ -12,7 +12,4 @@ while True:
     print(f"El numero era {numero_random}")
     print("Felicidades, No eres Gay")
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?C1759678DE1CCEBC5F397F54F48F47283722
-
-
-
+while True 
