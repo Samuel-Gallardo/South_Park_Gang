@@ -11,6 +11,7 @@ while True:
     print("Te Salvaste brother")
     print(f"El numero era {numero_random}")
     print("Felicidades, No eres Gay")
-   
+
+https://lostgamer.io/multiplayer/9k0Dwrwi-W9cY6ygfibY9
 
 
