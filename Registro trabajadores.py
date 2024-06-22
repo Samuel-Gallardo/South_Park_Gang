@@ -28,7 +28,7 @@ def Opciones():
 
 def Registrar_Trabajador():
     while True:
-        trabajador=input("Ingrese el Nombre y el Apellido del trabajador (Mayuscula al inicio del Nombre y Apellido): ").title()
+        trabajador=input("Ingrese el Nombre y el Apellido del trabajador : ").title()
         if trabajador not in trabajadores :
             trabajadores.append(trabajador)
             break
@@ -54,11 +54,10 @@ def Registrar_Trabajador():
     Sueldo.append(sueldo)
     Salud.append(sueldo*0.07)
     afp.append(sueldo*0.12)
-    
 def Ver_Lista_Trabajadores():
     for i in range(len(trabajadores)):
+        trabajadores.sort() #ordenar Alfabeticamente
         print(f"{i+1}.-{trabajadores[i]}")
-
 
 def Imprimir_Lista_Sueldos():
     with open('registrosTrabajadores.txt','w') as registros:
