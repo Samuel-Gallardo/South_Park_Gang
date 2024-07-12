@@ -5,6 +5,19 @@ productoComprado=[]
 carrito=[]
 total=[]
 
+
+sueldosmax=max(sueldos)
+    sueldomin=min(sueldos)
+    promediosueldo=sum(sueldos)/10
+    producto=prod(sueldos)
+    mediaG=producto**(1/10)
+    
+    print(f"Sueldo Maximo: {sueldosmax}")
+    print(f"Sueldo Minimo: {sueldomin}")
+    print(f"Promedio de Sueldos: {promediosueldo}")
+    print(f"Media Geometrica: {mediaG:.2f}")
+
+
 def opciones():
     while True:
         print("\n1.- Comprar Productos\n2.- Ver Carrito de Compra\n3.- Pagar\n4.- Salir")
