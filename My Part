@@ -1,0 +1,17 @@
+//MARKDOWN
+
+3.- 
+Valparaiso: 3hrs 15 minutos == 3,25
+Santiago: 2hrs 45 minutos   == 2,75
+Concepcion: 1hr 30 minutos  == 1,5 
+// CODE
+
+def V(t):
+    return 0.85*t**2+13.5*t+38
+def S(t):
+    return 1.2*t**2+16.2*t+29
+def C(t):
+    return 1.4*t**2+18.7*t+27
+print(f"Cantidad de agua caida en Valparaiso en 3 hrs y 15 minutos: {V(3.25):.1f}")
+print(f"Cantidad de agua caida en Santiago en 2 hrs y 45 minutos: {C(2.75):.1f}")
+print(f"Cantidad de agua caida en Santiago en 1 hr y 30 minutos: {S(1.5):.1f}")
