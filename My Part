@@ -15,3 +15,44 @@ def C(t):
 print(f"Cantidad de agua caida en Valparaiso en 3 hrs y 15 minutos: {V(3.25):.1f}")
 print(f"Cantidad de agua caida en Santiago en 2 hrs y 45 minutos: {C(2.75):.1f}")
 print(f"Cantidad de agua caida en Santiago en 1 hr y 30 minutos: {S(1.5):.1f}")
+
+
+//MARKDOWN
+4.-
+
+//MARKDOWN
+Calcular el tiempo para que llegue a los 95mm
+
+//CODE
+import numpy as np
+from scipy.optimize import fsolve
+
+def v(t):
+    return (0.85*t**2+13.5*t+38) -95
+
+def s(t):
+    return (1.2*t**2+16.2*t+29)-95
+
+def c(t):
+    return (1.4*t**2+18.7*t+27 )-95
+t=0
+sol = fsolve(v, t)
+print(round(sol[0],3))
+sol = fsolve(s, t)
+print(round(sol[0],3))
+sol = fsolve(c, t)
+print(round(sol[0],3))
+
+//MARKDOWN
+Comprobacion de lo anterior
+//CODE
+def V(t):
+    return 0.85*t**2+13.5*t+38
+def S(t):
+    return 1.2*t**2+16.2*t+29
+def C(t):
+    return 1.4*t**2+18.7*t+27
+print(f"{V(3.466):.1f}")
+print(f"{S(3.278):.1f}")
+print(f"{C(2.974):.1f}")
+
