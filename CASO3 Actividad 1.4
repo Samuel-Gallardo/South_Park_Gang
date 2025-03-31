@@ -1,0 +1,10 @@
+SELECT
+    TO_CHAR(ttc.fecha_transaccion,'MMYYYY') AS "MES TRANSACCIÓN",
+    ttt.nombre_tptran_tarjeta AS "TIPO TRANSACCION",
+    TO_CHAR(SUM(cupo_super_avance),'fml9g999g999') AS "MONTO AVANCES"
+FROM
+    transaccion_tarjeta_cliente ttc
+INNER JOIN tipo_transaccion_tarjeta ttt ON ttc.cod_tptran_tarjeta = ttt.cod_tptran_tarjeta
+INNER JOIN tarjeta_cliente tc ON ttc.nro_tarjeta = tc.nro_tarjeta
+WHERE EXTRACT (YEAR FROM fecha_transaccion) LIKE 2024
+GROUP BY TO_CHAR(ttc.fecha_transaccion,'MMYYYY'),ttt.nombre_tptran_tarjeta
